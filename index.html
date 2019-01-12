@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="js/staff_organiser.js"></script>
+    <title>Staff archive</title>
+  </head>
+  <body>
+    <h1>Input your new member of staff</h1>
+
+
+    <form id = "form-for-input">
+
+      <div class="for-name">
+        <label for="name">Name : </label>
+        <input type="text" required="required" id = "name" placeholder="type here">
+      </div>
+
+      <div class="for-surname">
+        <label for="surname">Surname : </label>
+        <input type="text" required="required" id = "surname" placeholder="type here">
+      </div>
+
+      <div class="for-title">
+        <label for="title">Title</label>
+        <select id = "title">
+          <option value="" disabled selected>select title</option>
+          <option value="Manager">Manager</option>
+          <option value="Chef">Chef</option>
+          <option value="FOH">FoH</option>
+        </select>
+      </div>
+
+      <div class="for-salary">
+        <label for="salary">Salary : </label>
+        <input type="number" required="required" min="0.00" max="1000000.00" step="0.01" id = "salary" placeholder="type here">
+      </div>
+
+      <input type="submit" value="Save">
+
+    </form>
+
+    <button type = "button" id = "delete-all">Delete all staff</button>
+
+    <ul  id = "results">
+
+    </ul>
+
+  </body>
+</html>
