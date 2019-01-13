@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <script src="js/staff_organiser.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <title>Staff archive</title>
   </head>
   <body>
-    <h1>Input your new member of staff</h1>
+    <h1>Input your new member of staff:</h1>
 
 
     <form id = "form-for-input">
+
+
+
 
       <div class="for-name">
         <label for="name">Name : </label>
@@ -19,6 +23,11 @@
       <div class="for-surname">
         <label for="surname">Surname : </label>
         <input type="text" required="required" id = "surname" placeholder="type here">
+      </div>
+
+      <div class="for-starting-date">
+        <label for="startingDate"> Starting date : </label>
+        <input type="date" id ="startingDate" required="required">
       </div>
 
       <div class="for-title">
@@ -42,9 +51,40 @@
 
     <button type = "button" id = "delete-all">Delete all staff</button>
 
-    <ul  id = "results">
 
-    </ul>
+
+    <h1>Your staff : </h1>
+
+
+
+
+<div class="results">
+
+
+    <div class="managers">
+      <p>Managers :</p>
+      <ul id = "manager">
+
+      </ul>
+    </div>
+
+
+    <div class="chefs">
+      <p>Kitchen :</p>
+      <ul id = "chef">
+
+      </ul>
+    </div>
+
+
+    <div class="fohs">
+      <p>Front of House:</p>
+      <ul id = "foh">
+
+      </ul>
+    </div>
+
+</div>
 
   </body>
 </html>

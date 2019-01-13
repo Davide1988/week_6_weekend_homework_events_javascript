@@ -1,0 +1,30 @@
+body {
+  font-style: italic;
+  background-image: url("https://www.exsilio.com/wp-content/uploads/2014/03/blurred-wallpaper-background-7591-7884-hd-wallpapers.jpg");
+
+}
+
+p {
+  color: blue;
+  font-size: 20px;
+}
+
+.results{
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
